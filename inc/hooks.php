@@ -27,7 +27,7 @@ function rtr_set_taxonomy( $post_id, $post, $update ) {
     // loop over rules
     foreach ( $rtr_rules as $rule ) {
         // see if the user role matches the rule role
-        if ( in_array( $rule['user_role'], $roles ) ) {
+        if ( ( $rule['user_role'] == '*' ) || in_array( $rule['user_role'], $roles ) ) {
             // if so, see if the post matches the post type
             if ( $rule['post_type'] == $post_type ) {
                 // if it does, add the term_id to the post

@@ -2,7 +2,7 @@
 /*
 Plugin Name: Role taxonomy rules
 Description: Set a taxonomy term on a post type if certain rules are met
-Version: 1.1.1
+Version: 1.2.0
 Author: Jason Lawton <jason@jasonlawton.com>
 */
 

@@ -37,6 +37,7 @@ $taxonomies = $filtered_taxonomies;
             <td>
                 <select name="rtr_user_role" id="user_role">
                     <option value=""></option>
+                    <option value="*">Any</option>
                     <?php foreach( $roles->role_names as $key => $name ) { ?>
                         <option value="<?php echo $key; ?>"><?php echo $name; ?></option>
                     <?php } ?>

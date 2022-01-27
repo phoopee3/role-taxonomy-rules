@@ -2,6 +2,9 @@
 
 $roles = wp_roles();
 
+// set up the anyone role
+$roles->role_names['*'] = 'Anyone';
+
 $post_types = get_post_types( [], 'objects' );
 
 $taxonomies = get_taxonomies( [], 'objects' );
